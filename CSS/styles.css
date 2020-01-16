@@ -1,22 +1,90 @@
-body {
-  background-color: #e3e7f1;
-}
+/**********TAG SELECTORS**********/
 
-hr {
-  border-style: dotted none none none;
-  border-width: 7px;
-  border-color: #c6cbef;
-  width: 5%;
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 h1 {
-  color: #494ca2;
+  color: #40bfc1;
+  margin-top: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+  color: #40bfc1;
+  font-family: 'Oxygen', sans-serif;
+  padding-bottom: 50px;
 }
 
 h3 {
-  color: #8186d5;
+  color: #40bfc1;
+  font-family: 'Oxygen', sans-serif;
+  padding-bottom: 50px;
 }
 
-strong {
-  color: #8186d5;
+hr {
+  margin: 50px 0;
+  border-style: none;
+  height: 5px;
+  background-color: #1f4287;
+}
+
+p {
+  color: #12cad6;
+}
+
+
+
+/**********CLASS SELECTORS**********/
+
+
+
+.top-container {
+  background-color: #071e3d;
+  position: relative;
+  padding-top: 200px;
+}
+
+.bluestar-img {
+  height: 700px;
+  width: 1250px;
+}
+
+.middle-container {
+  background-color: #071e3d;
+  padding-top: 200px;
+}
+
+.computer-img {
+  width: 200px;
+  height: 200px;
+  padding-bottom: 25px;
+}
+
+.swimming-img {
+  width: 200px;
+  height: 200px;
+}
+
+.bottom-container {
+  background-color: #071e3d;
+  padding-top: 200px;
+}
+
+.top-nebula {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 400px;
+  top: 50px;
+}
+
+.bottom-nebula {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 10px;
+  background: none;
 }
