@@ -35,8 +35,7 @@ h1 {
 }
 
 .nav-item {
-  font-family: "Montserrat-Light";
-  font-weight: lighter;
+  font-family: "Montserrat";
   font-size: 1.3rem;
   padding: 0 5%;
 }
