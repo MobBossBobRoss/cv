@@ -1,67 +1,161 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <title>Jacob Higginbotham</title>
-  <link rel="stylesheet" href="CSS/styles.css">
-  <link rel="icon" href="Images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Oxygen|Ubuntu&display=swap" rel="stylesheet">
+  <title>TinDog</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900|Ubuntu:400,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/421c748592.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="top-container">
-    <img class="top-nebula" src="Images/nebula1.png" alt="nebula-img">
-    <h1>I'm Jacob.</h1>
-    <p>
-      <h2>a webdev student.</h2>
-    </p>
-    <img class="bottom-nebula" src="Images/nebula2.png" alt="nebula-img">
-    <img class="bluestar-img" src="Images/bluestar.png" alt="blue-star-img">
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img src="Images/spaceship.png" alt="spaceship-img">
-      <h2>Hello.</h2>
-      <p>I'm a 23 year old who is currently studying to become a web developer.</p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="computer-img" src="Images/computer.png" alt="laptop-img">
-        <h3>CSS</h3>
-        <p>
-          I have been learning web development skills through an online course
-          for the past couple of weeks, and I have a firm grasp of the CSS
-          and HTML languages. Soon I will be learning Bootstrap 4 and JavaScript.
-        </p>
-      </div>
-      <div class="skill-row">
-        <img class="swimming-img" src="Images/swimming.png" alt="pool-img">
-        <h3>Swimming</h3>
-        <p>
-          I have always loved swimming, and I consider myself a strong swimmer.
-          As a child, I was always looking for permission to the use the neighbors'
-          swimming pool.
-        </p>
-      </div>
-    </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-      <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-      <a class="btn" href="mailto:jtoatoh@gmail.com">CONTACT ME</a>
-    </div>
-  </div>
+  <section id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">tindog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-left" id="navbarToggler">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
 
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/"><strong>LinkedIn</strong></a>
-    <a class="footer-link" href="https://twitter.com/"><strong>Twitter</strong></a>
-    <a class="footer-link" href="https://www.appbrewery.co/"><strong>Website</strong></a>
-    <p class="copyright">© 2020 Jacob Higginbotham.</p>
-  </div>
+
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="dl-button btn btn-dark btn-lg"><i class="fab fa-apple"></i>Download</button>
+          <button type="button" class="dl-button btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i>Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/iphone6.png" alt="iphone-mockup" id="iphone-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <h3>Easy to use.</h3>
+    <p>So easy to use, even your dog could do it.</p>
+
+    <h3>Elite Clientele</h3>
+    <p>We have all the dogs, the greatest dogs.</p>
+
+    <h3>Guaranteed to work.</h3>
+    <p>Find the love of your dog's life or your money back.</p>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+    <img src="images/dog-img.jpg" alt="dog-profile">
+    <em>Pebbles, New York</em>
+
+    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+    <em>Beverly, Illinois</em> -->
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img src="images/techcrunch.png" alt="tc-logo">
+    <img src="images/tnw.png" alt="tnw-logo">
+    <img src="images/bizinsider.png" alt="biz-insider-logo">
+    <img src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+
+    <h3>Chihuahua</h3>
+    <h2>Free</h2>
+    <p>5 Matches Per Day</p>
+    <p>10 Messages Per Day</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button>
+
+
+    <h3>Labrador</h3>
+    <h2>$49 / mo</h2>
+    <p>Unlimited Matches</p>
+    <p>Unlimited Messages</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button>
+
+
+    <h3>Mastiff</h3>
+    <h2>$99 / mo</h2>
+    <p>Pirority Listing</p>
+    <p>Unlimited Matches</p>
+    <p>Unlimited Messages</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3>Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button">Download</button>
+    <button type="button">Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <p>© Copyright 2018 TinDog</p>
+
+  </footer>
+
+
+</body>
 
 </html>
