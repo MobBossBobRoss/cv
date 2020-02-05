@@ -112,3 +112,19 @@ h3 {
   margin: 2%;
   width: 10%;
 }
+
+/* Pricing */
+
+#pricing {
+  padding: 5% 20%;
+}
+
+.pricing-card {
+  padding: 3% 2%;
+}
+
+.pricing-desc {
+  color: #8f8f8f;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
