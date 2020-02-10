@@ -20,19 +20,24 @@ h3 {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 8%;
 }
 
 #iphone-img {
-  margin-top: -5%;
-  margin-left: 20%;
+  top: -10%;
+  left: 25%;
   transform: rotate(25deg);
-  width: 60%;
+  width: 50%;
+  position: absolute;
 }
 
 #title {
   background-color: #ff4c68;
   color: white;
+  font-family: 'Montserrat-Black', sans-serif;
+}
+
+.tindog-brand {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -66,6 +71,12 @@ h3 {
 
 /* Features */
 
+#features {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
 .feature-icon {
   color: #ef8172;
   font-size: 4rem;
@@ -77,7 +88,7 @@ h3 {
 }
 
 .feature-column {
-  padding: 7%;
+  padding: 7% 7% 0;
 }
 
 .feature-description {
@@ -126,4 +137,56 @@ h3 {
 .pricing-desc {
   font-size: 1.1rem;
   font-weight: 500;
+}
+
+/* Call to Action */
+
+#cta {
+  background-color: #ff4c68;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat-Black', sans-serif;
+  padding: 5% 18%;
+}
+
+.cta-button {
+  margin: 5% 1.5% 0;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding-top: 2.8%;
+}
+
+.footer-icon {
+  font-size: 1.1rem;
+  padding: 0 0.7%;
+  color: black;
+}
+
+.footer-text {
+  color: #8f8f8f;
+  font-size: 1.1rem;
+  padding: 1.5% 0 2%;
+  font-weight: 600;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  #iphone-img {
+    top: -10%;
+    left: 25%;
+    transform: rotate(0deg);
+    width: 50%;
+    position: static;
+  }
 }
