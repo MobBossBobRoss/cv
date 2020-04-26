@@ -1,59 +1,68 @@
-function eventSwitch(eventVariable) {
-  switch (eventVariable) {
-    case "w":
-      var snare = new Audio("sounds/snare.mp3");
-      snare.play();
-      break;
-    case "a":
-      var tom3 = new Audio("sounds/tom-3.mp3");
-      tom3.play();
-      break;
-    case "s":
-      var tom1 = new Audio("sounds/tom-1.mp3");
-      tom1.play();
-      break;
-    case "d":
-      var tom2 = new Audio("sounds/tom-2.mp3");
-      tom2.play();
-      break;
-    case "j":
-      var kick = new Audio("sounds/kick-bass.mp3");
-      kick.play();
-      break;
-    case "k":
-      var tom4 = new Audio("sounds/tom-4.mp3");
-      tom4.play();
-      break;
-    case "l":
-      var crash = new Audio("sounds/crash.mp3");
-      crash.play();
-      break;
-    default:
-      console.log(eventVariable)
-      break;
-}}
+var colorArray = ["red", "yellow", "green", "blue"];
+var pattern = [];
+var step = 0;
+var level = 0;
 
-function animateButton(button) {
-  var activeButton = document.querySelector("." + button);
-  activeButton.classList.add("pressed");
+function updatePattern() {
+  r = Math.floor((Math.random(0, 4) * 4));
+  var nextColor = colorArray[r];
 
+  step = 0;
+
+  animateButton(nextColor);
+
+  level++
+  $("#level-title").text("Level " + level)
+
+  pattern.push(nextColor);
+}
+
+function animateButton(color) {
+  $("#" + color).addClass("pressed");
   setTimeout(function() {
-    activeButton.classList.remove("pressed")
-  }, 100);
+    $("#" + color).removeClass("pressed");
+  }, 150)
 
+  buttonSound = new Audio("sounds/" + color + ".mp3");
+  buttonSound.play();
 }
 
-var buttonList = document.querySelectorAll("button.drum");
+function gameOver() {
+  $("body").addClass("game-over")
+  setTimeout(function() {
+    $("body").removeClass("game-over");
+  }, 150)
 
-for (index = 0; index < buttonList.length; index++) {
-  buttonList[index].addEventListener("click", function() {
-    var buttonHTML = this.innerHTML;
-    eventSwitch(buttonHTML);
-    animateButton(buttonHTML);
+  $("#level-title").text("Game Over, press any key to restart.");
+
+  pattern = [];
+  level = 0;
+
+  wrongSound = new Audio("sounds/wrong.mp3");
+  wrongSound.play();
+}
+
+$(document).keypress(function() {
+  if (level === 0) {
+    updatePattern();
+    }
   })
-}
 
-document.addEventListener("keydown", function(event) {
-  eventSwitch(event.key)
-  animateButton(event.key)
+$(".btn").click(function() {
+  var clicked = $(this).attr("id")
+
+  animateButton(clicked)
+
+  if (clicked === pattern[step]) {
+    if (step === (pattern.length - 1)) {
+      $("#level-title").text("Very good!")
+      setTimeout(function() {
+        updatePattern();
+      }, 1000)
+    } else {
+      step++;
+    }
+  } else {
+    gameOver();
+  }
 })
