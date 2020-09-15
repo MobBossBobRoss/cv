@@ -1,14 +1,46 @@
 body {
-  background-color: gray;
+  background-color: black;
+  color: red;
+  margin: 0
+}
+
+h2 {
+  padding: 15rem;
+}
+
+.header, .footer {
+  background-image: url("img/coolfire.gif");
+  margin-bottom: 6rem;
+  padding: 6rem;
   text-align: center;
-  font-size: 2rem
 }
 
-p {
-  margin: 3rem 20rem
-}
-
-img {
-  width: 80rem;
+.fact1 {
+  margin-bottom: 15rem;
   height: 30rem;
+}
+
+  .imgfact1 {
+    float: left;
+    height: 30rem;
+    width: 60rem;
+    margin-right: 12rem;
+    display: block;
+  }
+
+.fact2 {
+  height: 30rem;
+  text-align: right;
+}
+
+  .imgfact2 {
+    float: right;
+    height: 30rem;
+    width: 60rem;
+    margin-left: 12rem;
+    display: block;
+  }
+
+.footer {
+  margin: 18rem 0 0 0;
 }
