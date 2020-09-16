@@ -1,46 +1,53 @@
+/* ELEMENTS */
+
 body {
-  background-color: black;
-  color: red;
+  background-color: purple;
   margin: 0
 }
 
-h2 {
-  padding: 15rem;
+/* HEADER */
+
+.header {
+  background-image: url("img/hearts.png");
+  background-size: 100%;
+  height: 40rem;
 }
 
-.header, .footer {
-  background-image: url("img/coolfire.gif");
-  margin-bottom: 6rem;
-  padding: 6rem;
+.abigail-img {
+  display: block;
+  width: 30rem;
+  height: 30rem;
+  margin: auto;
+  padding-top: 4.7rem;
+}
+
+.tiara-img {
+  width: 14rem;
+  height: 8rem;
+  position: absolute;
+  left: 45rem;
+  bottom: 40rem;
+}
+
+.bigheart-img {
+  width: 41rem;
+  height: 41rem;
+  position: absolute;
+  left: 39rem;
+  bottom: 16rem;
+}
+
+/* CENTER */
+
+.center {
+  padding: 5rem;
   text-align: center;
 }
 
-.fact1 {
-  margin-bottom: 15rem;
-  height: 30rem;
+.contact-button {
+  background-color: pink;
+  border-style: outset;
+  margin-top: 2rem;
 }
 
-  .imgfact1 {
-    float: left;
-    height: 30rem;
-    width: 60rem;
-    margin-right: 12rem;
-    display: block;
-  }
-
-.fact2 {
-  height: 30rem;
-  text-align: right;
-}
-
-  .imgfact2 {
-    float: right;
-    height: 30rem;
-    width: 60rem;
-    margin-left: 12rem;
-    display: block;
-  }
-
-.footer {
-  margin: 18rem 0 0 0;
-}
+/* FOOTER */
