@@ -1,0 +1,48 @@
+/* ELEMENTS */
+
+body {
+  background-image: url("../img/heaven2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+/* TESTIMONIALS */
+
+.testimonial-container {
+  display: grid;
+  grid-gap: 5rem 10rem;
+  grid-template-columns: auto auto;
+  margin: 6rem auto;
+  width: 75%;
+  height: 75%;
+}
+
+
+.testimonial {
+  background-color: gold;
+  height: 20rem;
+  padding: 3rem 6rem;
+}
+
+.testimonial-img {
+  border-radius: 100%;
+  width: 50%;
+  height: 60%;
+}
+
+.testimonial-txt {
+  font-size: 1.1rem;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 2rem;
+}
+
+.testimonial-name {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.index-link {
+  color: gold;
+}
